@@ -35,5 +35,79 @@ public class PacjentUPO {
     })
     private OsobaUPO osobaUpoIII;
 
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getImie() {
+        return imie;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
+    }
+
+    public OsobaUPO getOsobaUpoI() {
+        return osobaUpoI;
+    }
+
+    public void setOsobaUpoI(OsobaUPO osobaUpoI) {
+        this.osobaUpoI = osobaUpoI;
+    }
+
+    public OsobaUPO getOsobaUpoII() {
+        return osobaUpoII;
+    }
+
+    public void setOsobaUpoII(OsobaUPO osobaUpoII) {
+        this.osobaUpoII = osobaUpoII;
+    }
+
+    public OsobaUPO getOsobaUpoIII() {
+        return osobaUpoIII;
+    }
+
+    public void setOsobaUpoIII(OsobaUPO osobaUpoIII) {
+        this.osobaUpoIII = osobaUpoIII;
+    }
+
+    @Override
+    public String toString() {
+        String dane = "PacjentUPO{" +
+                "id=" + id +
+                ", imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", pesel='" + pesel + '\'';
+        if (osobaUpoI != null) {
+            dane += ", osobaUpoI=" + osobaUpoI.toString();
+        }
+        if (osobaUpoII != null) {
+            dane += ", osobaUpoII=" + osobaUpoII.toString();
+        }
+        if (osobaUpoIII != null) {
+            dane += ", osobaUpoIII=" + osobaUpoIII.toString();
+        }
+        dane += '}';
+        return dane;
+    }
 }
